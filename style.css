@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(246, 244, 244);
+    background-color: rgb(217, 215, 215);
     margin: 0;
 }
 
@@ -29,7 +29,9 @@ h1{
     
 }
 @media (max-width:800px){
-    h1{ font-size:4rem}
+    h1{ 
+      font-size:4rem
+    }
 }
 
 h2{
@@ -51,10 +53,13 @@ h2{
     align-items: center;
     height: 30vh;
     padding-top: 100px;
-    padding-bottom: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 300px;
+    margin-top: 0;
+    margin-bottom:0;
     background-color: #fdfdfd;
+}
+.photo-set img{
+  margin-top: 100px;
 }
 h3{
     color: rgb(68, 3, 68);
@@ -65,10 +70,21 @@ h3{
 }
 
 .p2{
-    width: 1000px;
+    max-width: 800px;
     text-align: center;
     font-size: 1.2rem;
-    margin: 0;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding-left: 100px; 
+    padding-right: 100px;
+}
+@media (max-width:600px){
+    .p2{
+    max-width: 600px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
 }
 
 .details {
@@ -131,6 +147,14 @@ h3{
     padding-top: 10px;
     padding-bottom: 10px;
     
+}
+.details img{
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  transition: 0.4s;
+}
+
+.details img:hover{
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.8));
 }
 
 
