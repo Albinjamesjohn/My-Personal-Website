@@ -28,9 +28,12 @@ h1{
     margin: 0;
     
 }
-@media (max-width:800px){
+@media (max-width:768px){
     h1{ 
       font-size:4rem
+    }
+    .container{
+      height: 80vh;
     }
 }
 
@@ -51,15 +54,24 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
-    padding-top: 100px;
-    padding-bottom: 300px;
-    margin-top: 0;
-    margin-bottom:0;
+    height: 10vh;
+    padding: 80px 20px;
+    
+    margin-top:0;
+    background-color: #fdfdfd;
+}
+.text-set{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top:0;
     background-color: #fdfdfd;
 }
 .photo-set img{
-  margin-top: 100px;
+  margin-top: 40px;
+  border-radius: 50%;
 }
 h3{
     color: rgb(68, 3, 68);
@@ -75,16 +87,24 @@ h3{
     font-size: 1.2rem;
     margin: 0 auto;
     line-height: 1.6;
-    padding-left: 100px; 
-    padding-right: 100px;
+    padding-left: 10px; 
+    padding-right: 10px;
 }
-@media (max-width:600px){
+@media (max-width:768px){
     .p2{
-    max-width: 600px;
-    text-align: center;
-    font-size: 0.8rem;
-    margin: 0 auto;
-}
+      max-width: 90%;
+      font-size: .8rem;
+      text-align: left;
+    }
+    .photo-set{
+      padding-top: 60px;
+      padding-bottom: 100px;
+
+    }
+    .photo-set img{
+      height: 150px;
+      margin-top:20px;
+    }
 }
 
 .details {
@@ -121,6 +141,23 @@ h3{
   box-shadow: 10px 10px 10px rgba(19, 7, 7, 0.4); /* optional: soft shadow */
 }
 
+@media (max-width:768px){
+  .details{
+    display: flex;
+    flex-direction: column;
+  }
+  .details img{
+    height: 150px;
+    width: 200px;
+  }
+  .details h3{
+    font-size: 1rem;
+  }
+  .details li{
+    font-size: 1rem;
+  }
+
+}
 
 
 /* contact */
@@ -144,10 +181,18 @@ h3{
     justify-content: center;
     gap:30px;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding:10px;
     
 }
+@media (max-width:768px){
+  .contact{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+
 .details img{
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
   transition: 0.4s;
